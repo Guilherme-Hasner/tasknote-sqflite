@@ -1,0 +1,27 @@
+* -> diferente do modelo da Francisca
+
+
+TELAS TASKS(
+    ...
+    painel(
+        opções de exibição ->
+            ordenar por data da task/data da última modificação        
+    )
+    *checkbox para concluir tarefa
+    *cor vermelha para tarefas atrasadas
+    *tela de edição de task é a mesma para nova task E a mesma de detalhes
+
+    TaskDetais(
+        *appBar: <- Título (antigo) + data de modificação + checkbox
+    )
+);
+
+Controllers(
+    transformar formato de data da tabela Tasks para String ao puxar do db
+    ...
+)
+
+(
+    *CircularProgressIndicatorsobreposto semitransparente sobre a tela atual
+    *mudar physics de todas SingleChildScrollView + bottom padding
+)
